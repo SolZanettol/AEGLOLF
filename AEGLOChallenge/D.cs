@@ -1,0 +1,1 @@
+﻿namespace n{public class D{public string d(string a){string o,s=o="",p="(|-+|/*^";foreach (var c in a.Replace(" ",o)){if(c=='('||c=='^')s=c+s;else if(char.IsDigit(c))o+=c;else if(c==')'){while(s[0]!='('){o+=s[0];s=s.Remove(0,1);}s=s.Remove(0,1);}else{while(p.IndexOf(c)<2+p.IndexOf(s==""?'0':s[0])){o+=s[0];s=s.Remove(0,1);}s=c+s;}}return string.Join(" ",(o+s).ToCharArray());}}}
